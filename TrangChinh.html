@@ -1,0 +1,103 @@
+
+<head>
+  <title>THARO NGOAN - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f1c2e;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      background-image: url("../b/top-view-desk-dark-concept-with-copy-space.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1); /* Làm trong suốt nhẹ */
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 80px); /* Trừ chiều cao navbar */
+      padding: 0 10%;
+      gap: 100px; /* Khoảng cách giữa chữ và avatar */
+    }
+    .hero-text {
+      text-align: center;
+      animation: chaytraiqua 3s linear ;
+     
+    }
+    .hero-text h1, .hero-text h2, .hero-text p {
+      margin: 10px 0;
+    }
+    .hero img {
+      width: 200px;
+      height: 200px;
+      border-radius: 25%;
+      border: 6px solid #ef483d;
+      box-shadow: 0 0 20px #ef483d;
+      animation: chayduoilen 3s linear ;
+    }
+    .socials {
+      margin-top: 20px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #ef483d;
+      font-size: 24px;
+      text-decoration: none;
+    }
+    @keyframes chaytraiqua {
+  from {
+    transform: translateX(-100%); /* bắt đầu ngoài bên trái */
+  }
+  to {
+    transform: translateX(10%); /* chạy sang ngoài bên phải */
+  }
+    }
+    @keyframes chayduoilen {
+    from {
+        transform: translateY(-100%); /* bắt đầu ngoài bên trái */
+    }
+    to {
+        transform: translateY(10%); /* chạy sang ngoài bên phải */
+    }
+        }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="about.html">About</a>
+  <a href="#">Skills</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, It's Me</h1>
+    <h2>Nguyen Thi Tharo Ngoan</h2>
+    <p>And I am a Graphic Designer</p>
+    <div class="socials">
+      <a href="#">IG</a>
+      <a href="#">ZL</a>
+      <a href="#">FB</a>
+    </div>
+  </div>
+  <img src="../b/1.11.jpg" alt="Profile Picture">
+</section>
+
+</body>
